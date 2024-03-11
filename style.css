@@ -5,6 +5,86 @@
 }
 
 body {
-    background-color: #070A0C;
-    color: #f6f6f6;
+    background-color: #F6F6F6;
+    color: #000000;
+    font-family: 'Inter Regular';
+    width: 100vw;
+    height: 100vh;
+}
+
+/********************/
+/*    typografy     */
+/********************/
+@font-face {
+    font-family: 'Hellix Medium';
+    src: local('Hellix Medium'),
+    local('Hellix-Medium'),
+    url(font/Hellix-Medium.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Hellix Regular';
+    src: local('Hellix Regular'),
+    local('Hellix-Regular'),
+    url(font/Hellix-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Regular'),
+    local('Inter-Regular'),
+    url(font/Inter-Regular.ttf) format('woff2');
+}
+@font-face {
+    font-family: 'Inter Semibold';
+    src: local('Inter Semibold'),
+    local('Inter-Semibold'),
+    url(font/Inter-Semibold.ttf) format('woff2');
+}
+/********************/
+/*                  */
+/********************/
+.titles {
+    width: 100vw;
+    padding: 2vw;
+}
+h1 {
+    font-family: 'Hellix Medium';
+    font-size: 2vw;
+}
+h3 {
+    font-family: 'Inter Regular';
+    font-size: 0.7vw;
+    text-transform: uppercase;
+    letter-spacing: 0.25vw;
+    color: #83ABF1;
+}
+.container {
+    display: block;
+    width: 100vw;
+    padding: 2vw;
+    text-align: center;
+}
+.box {
+    position: relative;
+    display: block;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-family: 'Inter Semibold';
+    font-size: 2vw;
+    width: 5vw;
+    text-align: center;
+    outline: none;
+}
+input::placeholder {
+    color: silver;
+}
+label {
+    display: block;
+    font-family: 'Inter Regular';
+    font-size: 0.85vw;
+    padding: 0.5vw;
+    color: silver;
 }
