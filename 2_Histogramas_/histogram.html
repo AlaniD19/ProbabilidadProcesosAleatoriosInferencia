@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogramas</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div class="titles">
+        <h3>Tarea</h3>
+        <h1>Visualizador de Histogramas</h1>
+    </div>
+
+    <div class="container">
+      <p>Se genera un histograma a partir de uno de los .txt con los datos de resultados</p>
+      <input type="file" name="file" id="file" style="display:none;" accept=".txt">
+      <label for="file">Seleccionar archivo</label>
+    </div>
+
+    <canvas id="myChart"></canvas>
+
+
+    <footer>
+        <p>&copy; 2024 <a href="">Alan Delgado</a>. Probabilidad, procesos aleatorios e inferencia.</p>
+        <p>CICI IPN. MCIC.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="histogram.js"></script>
+</body>
+</html>
