@@ -34,7 +34,14 @@ def count_c_keywords(file_path):
 
 
 if __name__ == "__main__":
-    file_path = "ruta/al/archivo.c"                             # Ruta del archivo a analizar
+    file_path = "verifier.c"                                    # Ruta del archivo a analizar
+    output_file_path = "reserved_words.txt"
     keyword_occurrences = count_c_keywords(file_path)           # Obtener el diccionario con las ocurrencias
     for keyword, count in keyword_occurrences.items():          # Mostrar el resultado
         print(f"{keyword}: {count}")
+    try:                                                        # intentar abrir el archivo
+        with open(output_file_path, 'w') as file:               # Abrir el archivo en modo de escritura
+            for keyword, count in keyword_occurrences.items():  # Guarda palabra número divido por un espacio
+                file.write(f"{keyword} {count}\n")
+    except Exception as e:                                      # si tiene algún problema al abrirlo
+        print(f"No se pudo escribir en el archivo {output_file_path}: {e}")
