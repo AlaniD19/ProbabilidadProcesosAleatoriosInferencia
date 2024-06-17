@@ -5,9 +5,9 @@
 # Fecha de creación: Junio 2024
 # Versión: 1.0
 def generate_and_save_e_digits(n, filename, block_size=1000):
-    """ Genera un diccionario con la ocurrencia de cada palabra reservada en C de un archivo fuente
-        ARGS: file_path (str): directorio del archivo del programa a evaluar
-        RETURN: keyword_count (dict): ocurrencia de palabras reservadas
+    """ Calcula cifras significativas del número e en bloques para grandes volumenes
+        ARGS: n (int): GB a generar. filename (str): archivo a escribir cifras. block_size (int): tamaño de bloque a escribir
+        RETURN: NA
     """
     a = [1] * (n + 1)                                       # Inicializa una lista 'a' con n+1 elementos, todos a 1.
     for block_start in range(0, n, block_size):             # Recorre los bloques de cifras, en pasos de block_size
