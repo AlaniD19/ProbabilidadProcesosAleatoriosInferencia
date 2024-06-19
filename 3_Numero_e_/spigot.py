@@ -33,9 +33,10 @@ if __name__ == "__main__":
 '''
 
 from collections import deque
+import sys
+sys.set_int_max_str_digits(0)
 
-
-def generate_and_save_e_digits(n, filename, block_size=1000000):
+def generate_and_save_e_digits(n, filename, block_size=100):
     # Utiliza deque para una mejor gestión de memoria
     a = deque([1])  # Inicializa con una sola posición en 1
 
@@ -63,7 +64,7 @@ def generate_and_save_e_digits(n, filename, block_size=1000000):
 if __name__ == "__main__":
     # Calcula el número de cifras a generar para obtener aproximadamente 5 GB de datos
     # Asumimos que cada cifra ocupa un byte
-    num_gb = 5
+    num_gb = 1
     num_digits = num_gb * 1024 * 1024 * 1024
 
     # Nombre del archivo donde se guardarán las cifras
